@@ -1,0 +1,103 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #999;
+}
+.user__dialog{
+  margin: 10rem 15rem;
+  width: 55%;
+  height: 50%;
+  background-color: rgba(0, 0, 0, 0.712);
+}
+form{
+  background-color: rgba(153, 153, 153, 0.267);
+  height: 20vh;
+  padding: 1.5rem;
+  width: 100%;
+  color: white;
+}
+.user__dialog-container{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.file__input{
+  line-height: 2rem;
+  background-color: #000;
+  color: white;
+  height: 5vh;
+  border-radius: 5%;
+  
+}
+
+.user__dialog-header{
+  display: flex;
+  
+}
+ul li{
+  margin-left: 1rem;
+  font-size: 1rem;
+  line-height: 5rem;
+  font-family: serif;
+  letter-spacing: 0.1rem;
+
+}
+
+.user__dialog-add{
+  fill: rgba(255, 255, 255, 0.514);
+  width: 5%;
+  height: 5vh;
+  margin-right: 2rem;
+  padding-top: 0.5rem;
+  margin-left: 1rem;
+}
+.user__dialog-close{
+  width: 8%;
+  height: 8vh;
+  fill: rgba(255, 255, 255, 0.514);
+  margin-left: 20rem;
+}
+
+h1{
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  height: 4rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+  padding-top: 0.5rem;
+}
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.button__1{
+  padding: 1.5rem;
+
+}
+.button__1-clear{
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 5%;
+  border: 1px solid white;
+  background-color: rgba(153, 153, 153, 0.267);
+  color: white;
+  cursor: pointer;
+  transition: all .4s;
+}
+.button__2{
+  padding: 1.5rem;
+  
+}
+.button__1-clear:hover{
+  color: green;
+  background-color: black;
+  transform: scale(1.1);
+
+}

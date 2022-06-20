@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Assignment</title>
+  </head>
+  <body>
+    <dialog class="user__dialog" open="">
+      <div class="user__dialog-container">
+        <div class="user__dialog-header">
+          <svg class="user__dialog-add">
+            <use xlink:href="./image/symbol-defs.svg#icon-add-user"></use>
+          </svg>
+          <div>
+            <h1>new user</h1>
+          </div>
+        </div>
+        <div class="user__dialog-closes">
+          <svg class="user__dialog-close">
+            <use xlink:href="./image/symbol-defs.svg#icon-circle-with-cross"></use>
+          </svg>
+        </div>
+      </div>
+
+      <form>
+        <input class="file__input"  type="file" id="myFile" name="filename" />
+        <ul>
+          <li>Minimum upload 1mb</li>
+        </ul>
+      </form>
+      <div class="buttons">
+        <div class="button__1">
+          <button class="button__1-clear">clear</button>
+        </div>
+
+        <div class="button__2">
+          <button class="button__1-clear">cancel</button>
+          <button class="button__1-clear">confirm</button>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
