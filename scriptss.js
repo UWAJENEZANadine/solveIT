@@ -1,7 +1,7 @@
-const header = document.querySelector('header')
-const button = document.getElementById('button__color')
+const header = document.querySelector('h1');
+const button = document.getElementById('button__color');
 
 button.addEventListener('click', () => {
-  header.classList.add('red-background','text-red')
+  header.classList.add('text-red')
 
 });
