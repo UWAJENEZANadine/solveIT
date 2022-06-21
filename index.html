@@ -1,59 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-
-    <script type="text/javascript" src="./scriptss.js"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
-
-   
-    <title>Assignment</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body class="bg-dark">
-    <dialog class="user__dialog" open="">
-      <div class="user__dialog-container">
-        <div class="user__dialog-header">
-          <svg class="user__dialog-add">
-            <use xlink:href="./image/symbol-defs.svg#icon-add-user"></use>
-          </svg>
-          <div>
-              <h1 class="text-white">new user</h1>
-          </div>
-        </div>
-        <div class="user__dialog-closes">
-          <svg class="user__dialog-close">
-            <use
-              xlink:href="./image/symbol-defs.svg#icon-circle-with-cross"
-            ></use>
-          </svg>
-        </div>
-      </div>
+  <body>
+    <dialog id="dialog">
+      <form method="dialog" id="get_avatar_image_form">
+        <div class="card">
+          <section class="card--head">
+            <ion-icon name="person-add-outline"></ion-icon>
+            <p>New User</p>
 
-      <form>
-        <input class="file__input" type="file" id="myFile" name="filename" />
-        <ul>
-          <li>Minimum upload 1mb</li>
-        </ul>
+            <button class="card--head-close_dialog">
+              <ion-icon name="close-circle-outline"></ion-icon>
+            </button>
+          </section>
+          <section class="card--body">
+            <div class="card--body--file">
+              <label for="userimage">Upload an image</label>
+              <input
+                id="userimage"
+                type="file"
+                accept=".jpg, .jpeg, .png"
+                name="userimage"
+              />
+            </div>
+            <p class="card--body--max_upload">* Maximum upload 1mb</p>
+          </section>
+          <section class="card--footer">
+            <button
+              type="button"
+              id="resetButton"
+              class="card--footer-clear_btn"
+            >
+              Clear
+            </button>
+            <div class="card--footer-menu">
+              <button
+                type="button"
+                id="cancelButton"
+                class="card--footer-cancel_btn"
+              >
+                Cancel
+              </button>
+              <button class="card--footer-confirm_btn">Confirm</button>
+              <!--<button type="submit" id="confirmBtn" class="card--footer-cancel_confirm">Confirm</button>-->
+            </div>
+          </section>
+        </div>
       </form>
-      <div class="buttons">
-        <div class="button__1">
-          <button class="button__1-clear" id="button__color">clear</button>
-        </div>
-
-        <div class="button__2">
-          <button class="button__1-clear">cancel</button>
-          <button class="button__1-clear">confirm</button>
-        </div>
-      </div>
     </dialog>
 
+    <button
+      id="add_new_avatar"
+      type="button"
+      class="avatar-button avatar-button__add-new"
+    >
+      +
+    </button>
+
+    <output></output>
+
+    <script type="text/javascript" src="./index.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
