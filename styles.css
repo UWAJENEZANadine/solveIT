@@ -28,9 +28,9 @@ form{
   line-height: 2rem;
   background-color: #000;
   color: white;
-  height: 5vh;
-  border-radius: 5%;
-  
+  height: 6vh;
+  border-radius: 4%;
+  margin-left: 2rem;
 }
 
 .user__dialog-header{
@@ -59,17 +59,20 @@ ul li{
   height: 8vh;
   fill: rgba(255, 255, 255, 0.514);
   margin-left: 20rem;
+  cursor: pointer;
 }
 
 h1{
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
   text-transform: uppercase;
   font-weight: 500;
   height: 4rem;
-  font-size: 1.5rem;
   font-weight: 800;
-  color: white;
   padding-top: 0.5rem;
+  
+}
+.text-white{
+  font-size: 1.5rem;
 }
 .buttons{
   display: flex;
